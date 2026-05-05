@@ -1,0 +1,13 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Home{% endblock %}
+
+{% block body %}
+<div class="container mt-4">
+    <h1>Home</h1>
+    <p>Bonjour Sarah</p>
+
+    <h3><a href="{{ path('app_moyenne', {note1: 15, note2: 12}) }}">Calculer une moyenne</a></h3>
+    <h3><a href="{{ path('app_contact') }}">Contact</a></h3>
+</div>
+{% endblock %}
